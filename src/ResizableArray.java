@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ResizableArray<T> {
     private T[] array;
     private int size;
@@ -47,5 +49,9 @@ public class ResizableArray<T> {
 
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    public void sort() {
+        Arrays.sort(array, 0, size);
     }
 }
